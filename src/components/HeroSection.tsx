@@ -93,8 +93,8 @@ const HeroSection = () => {
             className="flex flex-wrap justify-center gap-8 md:gap-16 mt-16"
           >
             {[
-              { value: '87+', label: 'ТЦ в сети' },
-              { value: '240+', label: 'Пилонов' },
+              { value: '5', label: 'Городов' },
+              { value: '156', label: 'Пилонов' },
               { value: '50M+', label: 'Охват/мес' },
             ].map((stat, index) => (
               <div key={index} className="text-center">

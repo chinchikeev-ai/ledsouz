@@ -10,16 +10,11 @@ interface City {
 }
 
 const cities: City[] = [
-  { id: 'msk', name: 'Москва', malls: 24, x: 37, y: 42 },
-  { id: 'spb', name: 'Санкт-Петербург', malls: 15, x: 32, y: 32 },
-  { id: 'ekb', name: 'Екатеринбург', malls: 11, x: 58, y: 40 },
-  { id: 'nsk', name: 'Новосибирск', malls: 8, x: 70, y: 43 },
-  { id: 'kzn', name: 'Казань', malls: 7, x: 47, y: 40 },
-  { id: 'nnv', name: 'Нижний Новгород', malls: 6, x: 42, y: 40 },
-  { id: 'sochi', name: 'Сочи', malls: 4, x: 38, y: 56 },
-  { id: 'krd', name: 'Краснодар', malls: 5, x: 38, y: 52 },
-  { id: 'vld', name: 'Владивосток', malls: 3, x: 95, y: 48 },
-  { id: 'sam', name: 'Самара', malls: 4, x: 48, y: 45 },
+  { id: 'tum', name: 'Тюмень', malls: 28, x: 20, y: 35 },
+  { id: 'tsk', name: 'Томск', malls: 22, x: 50, y: 32 },
+  { id: 'nsk', name: 'Новосибирск', malls: 45, x: 42, y: 45 },
+  { id: 'kem', name: 'Кемерово', malls: 26, x: 55, y: 48 },
+  { id: 'krs', name: 'Красноярск', malls: 35, x: 75, y: 38 },
 ];
 
 const MapSection = () => {
@@ -55,11 +50,11 @@ const MapSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-foreground">Сеть в </span>
-            <span className="gradient-text text-glow-cyan">87+ крупнейших</span>
+            <span className="text-foreground">Сеть </span>
+            <span className="gradient-text text-glow-cyan">156 пилонов</span>
           </h2>
           <p className="text-2xl md:text-3xl text-muted-foreground font-display">
-            торговых центрах России
+            в торговых центрах Сибири
           </p>
         </motion.div>
 
@@ -76,20 +71,20 @@ const MapSection = () => {
             className="w-full h-full"
             style={{ filter: 'drop-shadow(0 0 20px hsl(185 100% 50% / 0.2))' }}
           >
-            {/* Simplified Russia outline */}
+            {/* Siberian Region Outline */}
             <path
-              d="M5,35 Q10,25 25,28 L30,30 Q35,28 40,32 L45,35 Q50,30 55,33 L60,35 Q65,32 70,35 L75,33 Q80,35 85,38 L90,35 Q95,38 98,40 L95,45 Q90,48 85,45 L80,48 Q75,50 70,48 L65,50 Q60,48 55,50 L50,48 Q45,52 40,50 L35,55 Q30,58 25,55 L20,52 Q15,55 10,50 L5,45 Q3,40 5,35"
+              d="M10,20 Q15,15 30,18 L45,20 Q55,18 65,22 L80,25 Q90,28 95,32 L92,45 Q88,55 75,52 L60,50 Q50,55 40,52 L25,48 Q15,50 10,45 L8,35 Q5,28 10,20"
               fill="none"
               stroke="hsl(var(--neon-cyan))"
-              strokeWidth="0.3"
-              strokeOpacity="0.5"
+              strokeWidth="0.4"
+              strokeOpacity="0.6"
             />
 
-            {/* Glowing country fill */}
+            {/* Glowing region fill */}
             <path
-              d="M5,35 Q10,25 25,28 L30,30 Q35,28 40,32 L45,35 Q50,30 55,33 L60,35 Q65,32 70,35 L75,33 Q80,35 85,38 L90,35 Q95,38 98,40 L95,45 Q90,48 85,45 L80,48 Q75,50 70,48 L65,50 Q60,48 55,50 L50,48 Q45,52 40,50 L35,55 Q30,58 25,55 L20,52 Q15,55 10,50 L5,45 Q3,40 5,35"
+              d="M10,20 Q15,15 30,18 L45,20 Q55,18 65,22 L80,25 Q90,28 95,32 L92,45 Q88,55 75,52 L60,50 Q50,55 40,52 L25,48 Q15,50 10,45 L8,35 Q5,28 10,20"
               fill="url(#mapGradient)"
-              fillOpacity="0.3"
+              fillOpacity="0.15"
             />
 
             {/* Connection Lines */}
