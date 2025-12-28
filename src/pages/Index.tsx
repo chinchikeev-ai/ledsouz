@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from 'react-helmet-async';
+import HeroSection from '@/components/HeroSection';
+import PylonCalculatorSection from '@/components/PylonCalculatorSection';
+import MapSection from '@/components/MapSection';
+import FinalCTASection from '@/components/FinalCTASection';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>INDOOR LED-реклама в торговых центрах России | LED Screens</title>
+        <meta name="description" content="Цифровые LED-экраны и пилоны в 87+ крупнейших торговых центрах России. Максимальный охват платёжеспособной аудитории. Рассчитайте кампанию за 60 секунд." />
+        <meta name="keywords" content="LED реклама, indoor реклама, реклама в ТЦ, цифровые пилоны, LED экраны, реклама в торговых центрах" />
+      </Helmet>
+      
+      <main className="overflow-y-auto">
+        <HeroSection />
+        <PylonCalculatorSection />
+        <MapSection />
+        <FinalCTASection />
+      </main>
+    </>
   );
 };
 
