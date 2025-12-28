@@ -140,8 +140,8 @@ const FinalCTASection = () => {
               transition={{ duration: 0.8 }}
               className="grid grid-cols-3 gap-4 mb-12"
             >
-              <CounterStat value={87} label="ТЦ в сети" suffix="+" />
-              <CounterStat value={240} label="LED пилонов" suffix="+" />
+              <CounterStat value={5} label="Городов" />
+              <CounterStat value={156} label="LED пилонов" />
               <CounterStat value={2025} label="год запуска" />
             </motion.div>
 
@@ -261,9 +261,25 @@ const FinalCTASection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center mt-16 pt-8 border-t border-border"
         >
-          <div className="font-display text-xl font-bold gradient-text mb-2">LEDSCREENS.RU</div>
-          <p className="text-sm text-muted-foreground">
-            © 2025 INDOOR LED-реклама в торговых центрах России
+          <div className="font-display text-2xl font-bold gradient-text mb-4">LEDСОЮЗ</div>
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground mb-4">
+            <a href="tel:+73832995070" className="hover:text-neon-cyan transition-colors">+7 383 299-50-70</a>
+            <a href="mailto:ska@ledcloud.ru" className="hover:text-neon-cyan transition-colors">ska@ledcloud.ru</a>
+            <a href="https://ledcloud.ru" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">ledcloud.ru</a>
+          </div>
+          <div className="flex justify-center gap-4 mb-6">
+            <a href="#" className="glass-card px-4 py-2 rounded-lg border border-border hover:border-neon-cyan/50 transition-colors text-sm text-foreground">
+              Telegram
+            </a>
+            <a href="#" className="glass-card px-4 py-2 rounded-lg border border-border hover:border-neon-cyan/50 transition-colors text-sm text-foreground">
+              WhatsApp
+            </a>
+            <a href="#" className="glass-card px-4 py-2 rounded-lg border border-border hover:border-neon-cyan/50 transition-colors text-sm text-foreground">
+              MAX
+            </a>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            © 2025 LEDСОЮЗ — INDOOR LED-реклама в торговых центрах Сибири
           </p>
         </motion.div>
       </div>
